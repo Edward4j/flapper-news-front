@@ -27,8 +27,22 @@ angular.module('flapperNewsFront', [])
       if(!$scope.title || $scope.title === '') { return; }
 
       // Retrieve the title entered into our form, which is bound to the $scope variable title, and set title to blank once it has been added to the posts array:
-      $scope.posts.push({ title: $scope.title, upvotes: 0 });
+      $scope.posts.push({
+        title: $scope.title,
+        link: $scope.link,
+        upvotes: 0
+      });
       $scope.title = '';
+      $scope.link = '';
+    };
+
+    $scope.incrementUpvotes = function(post) {
+      post.upvotes += 1;
+    };
+
+    $scope.decrementUpvotes = function(post) {
+      if(post.upvotes == 0) { return; };
+      post.upvotes -= 1;
     };
 
   }]);
