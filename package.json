@@ -1,0 +1,22 @@
+{
+  "name": "flapper-news-front",
+  "version": "1.0.0",
+  "description": "Angular 1 test project - uses the same angular version as for Sparkup Norge project.",
+  "main": "MainCtrl.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edward4j/flapper-news-front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edward4j/flapper-news-front/issues"
+  },
+  "homepage": "https://github.com/Edward4j/flapper-news-front#readme"
+}
